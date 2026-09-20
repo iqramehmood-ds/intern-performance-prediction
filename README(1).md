@@ -58,13 +58,26 @@ The Random Forest used `class_weight='balanced'` to give additional weight to th
 - The results cannot be treated as evidence of how accurately the model would predict real intern performance.
 - At-risk recall (0.43) is still moderate, so the model should be viewed as a starting point for identifying interns who may benefit from a check-in, not as a final decision-making tool.
 
-## Possible Next Steps
+## Visualizations
 
-- Replace synthetic data with real attendance and task records if appropriate data becomes available.
-- Evaluate the model using cross-validation on a larger real-world dataset.
-- Experiment with SMOTE or other class-imbalance techniques.
-- Tune the probability threshold based on the cost of missing genuinely at-risk interns.
-- Compare additional models and evaluate precision, recall, F1-score, and calibration.
+### Attendance vs Task Completion
+
+<img width="975" height="750" alt="attendance_vs_completion" src="https://github.com/user-attachments/assets/8d34843b-0b8d-43b0-a497-2b1559095a91" />
+
+
+### Confusion Matrix
+
+<img width="675" height="600" alt="confusion_matrix" src="https://github.com/user-attachments/assets/f848b1ff-862e-4ed7-8afa-9ab9d9a9dfa4" />
+
+
+### Feature Importance
+
+<img width="1050" height="600" alt="feature_importance" src="https://github.com/user-attachments/assets/c44a03f5-a15a-4639-a820-63934aad5ee2" />
+
+
+### Success Probability Distribution
+
+<img width="1050" height="600" alt="probability_distribution" src="https://github.com/user-attachments/assets/e25fff8c-b863-4bbc-965d-dad46c821d8b" />
 
 ## Tools
 
